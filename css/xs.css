@@ -1,0 +1,40 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#landing-bg {
+    background-image: url("https://ik.imagekit.io/w1xennnidd/restaurant_F_gGQvYs4fbq.jpg");
+    min-height: 100vh;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#header {
+    background-color: rgb(123, 0, 44, 0.7);
+    padding: 0 30px;
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#header-logo-container {
+    height: 50px;
+    width: 100%;
+}
+
+#header-logo {
+    height: 50px;
+}
+
+#menu-bars {
+    color: rgb(255, 215, 0);
+    font-size: 30px;
+}
+
+.menu-option {
+    display: none;
+}

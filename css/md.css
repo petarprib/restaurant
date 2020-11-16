@@ -1,0 +1,34 @@
+@media (min-width: 768px) {
+    #landing-bg {
+        padding: 15px 30px 0 30px;
+    }
+    #header {
+        display: grid;
+        grid-template-columns: 4fr 1fr 4fr;
+        padding: 0;
+    }
+    #header-logo-container {
+        display: flex;
+        justify-content: center;
+    }
+    #menu-bars {
+        display: none;
+    }
+    .menu-options {
+        display: flex;
+    }
+    .menu-options-left {
+        justify-content: flex-end;
+    }
+    .menu-option {
+        display: block;
+        color: rgb(255, 215, 0);
+        text-transform: uppercase;
+    }
+    .menu-option-left {
+        margin-right: 20%;
+    }
+    .menu-option-right {
+        margin-left: 20%;
+    }
+}
