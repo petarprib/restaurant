@@ -1,1 +1,8 @@
-@media (min-width: 1200px) {}
+@media (min-width: 1200px) {
+    .header-option-left {
+        margin-right: 25%;
+    }
+    .header-option-right {
+        margin-left: 25%;
+    }
+}
