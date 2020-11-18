@@ -1,36 +1,26 @@
 @media (min-width: 768px) {
-    /* #landing-bg {
-        padding: 15px 15px 0 15px;
-    } */
     #header {
-        display: grid;
-        grid-template-columns: 4fr 1fr 4fr;
         padding: 0;
-    }
-    #header-logo-container {
-        display: flex;
-        justify-content: center;
+        justify-content: space-evenly;
     }
     #sidebar-toggler {
         display: none;
     }
-    .header-options {
-        display: flex;
-    }
-    .header-options-left {
-        justify-content: flex-end;
-    }
     .header-option {
-        display: block;
         color: rgb(255, 215, 0);
         text-transform: uppercase;
         font-size: 1.1rem;
         text-decoration: none;
+        display: inline-block;
+        padding: 1px 0;
+        background-image: linear-gradient(rgb(218, 165, 32), rgb(218, 165, 32));
+        background-position: 50% 100%;
+        background-size: 0% 1px;
+        background-repeat: no-repeat;
+        transition: background-size 250ms, background-position 0s 250ms;
     }
-    .header-option-left {
-        margin-right: 15%;
-    }
-    .header-option-right {
-        margin-left: 15%;
+    .header-option:hover {
+        background-position: 50% 100%;
+        background-size: 100% 1px;
     }
 }
