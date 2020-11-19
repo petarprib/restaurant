@@ -1,3 +1,5 @@
+/******************** GENERAL ********************/
+
 * {
     margin: 0;
     padding: 0;
@@ -8,6 +10,8 @@
 .pointer {
     cursor: pointer;
 }
+
+/******************** LANDING PAGE ********************/
 
 #landing-bg {
     background-image: url("https://ik.imagekit.io/w1xennnidd/landing-image_o0ZkP73xMKyD.jpg");
@@ -21,7 +25,6 @@
 }
 
 #landing-content {
-    /* background-color: rgba(255, 255, 255, 0.8); */
     padding: 30px;
     display: flex;
     flex-direction: column;
@@ -34,27 +37,29 @@
     text-align: center;
     color: rgb(255, 215, 0);
     font-family: 'Pacifico', cursive;
-    font-weight: 700;
     font-size: 1.7rem;
     margin-bottom: 15px;
 }
 
 #landing-button {
     color: rgb(255, 215, 0);
-    font-size: 1.1rem;
+    font-size: 1.3rem;
     font-weight: 700;
     background-color: transparent;
     border: solid rgb(255, 215, 0) 3px;
-    border-radius: 20px;
-    padding: 10px;
+    border-radius: 5px;
+    padding: 10px 20px;
+    transition: all 200ms ease;
 }
 
 #landing-button:hover {
+    letter-spacing: 2px;
     color: rgb(123, 0, 44);
-    /* border: solid rgb(218, 165, 32) 3px; */
-    transition: color 200ms linear;
-    /* transition: border 200ms linear; */
+    background-color: rgb(255, 215, 0);
+    ;
 }
+
+/******************** HEADER ********************/
 
 #header {
     position: fixed;
@@ -85,6 +90,8 @@
     display: none;
 }
 
+/******************** SIDEBAR ********************/
+
 #sidebar {
     height: calc(100vh - 75px);
     width: 100%;
@@ -92,8 +99,7 @@
     right: -100%;
     bottom: 0;
     background-color: rgb(123, 0, 44, 0.8);
-    transition: 800ms;
-    transition-timing-function: ease;
+    transition: 800ms ease;
 }
 
 #sidebar-options {
@@ -115,7 +121,7 @@
     background-position: 50% 100%;
     background-size: 0% 1px;
     background-repeat: no-repeat;
-    transition: background-size 250ms, background-position 0s 250ms;
+    transition: background-size 250ms ease, background-position 0s 250ms ease;
 }
 
 .sidebar-option:hover {
@@ -129,9 +135,21 @@
     justify-content: space-between;
 }
 
+.social-media.fab {
+    display: flex;
+}
+
 .social-media {
     font-size: 1.5rem;
     color: rgb(255, 215, 0);
-    width: 24px;
+    width: 30px;
+    height: 30px;
     text-align: center;
+    transition: 200ms ease;
+    justify-content: center;
+    align-items: center;
+}
+
+.social-media:hover {
+    font-size: 2rem;
 }
