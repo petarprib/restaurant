@@ -1,0 +1,155 @@
+/******************** GENERAL ********************/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Quicksand", sans-serif;
+}
+
+.pointer {
+    cursor: pointer;
+}
+
+/******************** LANDING PAGE ********************/
+
+#landing-bg {
+    background-image: url("https://ik.imagekit.io/w1xennnidd/landing-image_o0ZkP73xMKyD.jpg");
+    height: 100vh;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+#landing-content {
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: calc(100vh - 75px);
+}
+
+#landing-title {
+    text-align: center;
+    color: rgb(255, 215, 0);
+    font-family: 'Pacifico', cursive;
+    font-size: 1.7rem;
+    margin-bottom: 15px;
+}
+
+#landing-button {
+    color: rgb(255, 215, 0);
+    font-size: 1.3rem;
+    font-weight: 700;
+    background-color: transparent;
+    border: solid rgb(255, 215, 0) 3px;
+    border-radius: 5px;
+    padding: 10px 20px;
+    transition: all 200ms ease;
+}
+
+#landing-button:hover {
+    letter-spacing: 2px;
+    color: rgb(123, 0, 44);
+    background-color: rgb(255, 215, 0);
+    ;
+}
+
+/******************** HEADER ********************/
+
+#header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: rgb(123, 0, 44, 0.8);
+    padding: 0 30px;
+    height: 75px;
+    display: flex;
+    align-items: center;
+}
+
+#header-logo {
+    display: block;
+    height: 50px;
+}
+
+#sidebar-toggler {
+    display: flex;
+    justify-content: center;
+    margin-left: auto;
+    width: 28px;
+    color: rgb(255, 215, 0);
+    font-size: 30px;
+}
+
+.header-option {
+    display: none;
+}
+
+/******************** SIDEBAR ********************/
+
+#sidebar {
+    height: calc(100vh - 75px);
+    width: 100%;
+    position: fixed;
+    right: -100%;
+    bottom: 0;
+    background-color: rgb(123, 0, 44, 0.8);
+    transition: 800ms ease;
+}
+
+#sidebar-options {
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.sidebar-option {
+    color: rgb(255, 215, 0);
+    text-transform: uppercase;
+    font-size: 1.1rem;
+    text-decoration: none;
+    display: inline-block;
+    padding: 1px 0;
+    background-image: linear-gradient(rgb(218, 165, 32), rgb(218, 165, 32));
+    background-position: 50% 100%;
+    background-size: 0% 1px;
+    background-repeat: no-repeat;
+    transition: background-size 250ms ease, background-position 0s 250ms ease;
+}
+
+.sidebar-option:hover {
+    background-position: 50% 100%;
+    background-size: 100% 1px;
+}
+
+#sidebar-social-media {
+    width: 40%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.social-media.fab {
+    display: flex;
+}
+
+.social-media {
+    font-size: 1.5rem;
+    color: rgb(255, 215, 0);
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    transition: 200ms ease;
+    justify-content: center;
+    align-items: center;
+}
+
+.social-media:hover {
+    font-size: 2rem;
+}
