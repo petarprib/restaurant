@@ -15,6 +15,26 @@ img {
     cursor: pointer;
 }
 
+.section-container {
+    padding: 15px 0;
+    margin: 0 auto;
+    width: 100%;
+    max-width: 753px;
+}
+
+.section-title-container {
+    margin: 0 0 15px 15px;
+}
+
+.section-title {
+    font-size: 2.5rem;
+    position: relative;
+    top: 8px;
+    left: 8px;
+    line-height: 2rem;
+    text-transform: uppercase;
+}
+
 /************************* LANDING PAGE *************************/
 
 #landing {
@@ -66,6 +86,7 @@ img {
 /************************* HEADER *************************/
 
 #header {
+    z-index: 1000;
     position: fixed;
     top: 0;
     width: 100%;
@@ -159,25 +180,13 @@ img {
 
 /************************* HISTORY *************************/
 
-#history {
-    margin: 0 auto;
-    width: 100%;
-    max-width: 753px;
-}
-
 #history-title-container {
     background-color: rgb(123, 0, 44, 0.8);
-    margin: 15px;
+    width: 162px;
 }
 
 #history-title {
-    font-size: 2.5rem;
-    line-height: 1.6rem;
-    padding-top: 2px;
-    text-transform: uppercase;
-    color: rgb(255, 255, 255);
-    padding-right: 5%;
-    text-align: right;
+    color: rgb(0, 0, 0);
 }
 
 #history-content {
@@ -232,4 +241,19 @@ img {
     width: 100%;
     border-top-left-radius: 5px;
     border-bottom-left-radius: 5px;
+}
+
+/************************* GALLERY *************************/
+
+#gallery {
+    background-color: rgb(123, 0, 44, 0.8);
+}
+
+#gallery-title-container {
+    background-color: rgb(255, 215, 0);
+    width: 171px;
+}
+
+#gallery-title {
+    color: rgb(255, 255, 255);
 }
