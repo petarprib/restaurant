@@ -1,3 +1,5 @@
+AOS.init();
+
 function toggleSidebar() {
   const sidebar_toggler = document.getElementById("sidebar-toggler");
   const body = document.getElementById("body");

@@ -1,1 +1,8 @@
-@media (min-width: 576px) {}
+@media (min-width: 576px) {
+    #history {
+        padding: 15px;
+    }
+    #history-title-container {
+        margin: 0 0 15px 0;
+    }
+}

@@ -9,8 +9,9 @@
     <link rel="stylesheet" href="../styles/lg.css" />
     <link rel="stylesheet" href="../styles/xl.css" />
     <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link
-      href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap"
       rel="stylesheet"
     />
     <link rel="preconnect" href="https://fonts.gstatic.com" />
@@ -18,16 +19,19 @@
       href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <script
       defer
       src="https://kit.fontawesome.com/3bc29e9d3f.js"
       crossorigin="anonymous"
     ></script>
+    <script defer src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script defer src="../scripts/script.js" type="text/javascript"></script>
     <title>Restaurant</title>
   </head>
 
   <body id="body">
+    <!-------------------- HEADER -------------------->
     <header id="header">
       <div>
         <a href="#" class="header-option header-option-left">History</a>
@@ -56,6 +60,8 @@
         onclick="toggleSidebar()"
       ></i>
     </header>
+
+    <!-------------------- SIDEBAR -------------------->
     <div id="sidebar">
       <div id="sidebar-options">
         <a href="#" class="sidebar-option">History</a>
@@ -69,7 +75,9 @@
         </div>
       </div>
     </div>
-    <div id="landing-bg">
+
+    <!-------------------- LANDING PAGE -------------------->
+    <div id="landing">
       <div id="landing-content">
         <p id="landing-title">
           Lorem ipsum dolor sit amet consectetur adipisicing elit.
@@ -79,46 +87,67 @@
         </button>
       </div>
     </div>
-    <div>
-      <p>
-        Just random content that lets me see how the landing page and the header
-        behave when scrolling. Just random content that lets me see how the
-        landing page and the header behave when scrolling. Just random content
-        that lets me see how the landing page and the header behave when
-        scrolling. Just random content that lets me see how the landing page and
-        the header behave when scrolling. Just random content that lets me see
-        how the landing page and the header behave when scrolling. Just random
-        content that lets me see how the landing page and the header behave when
-        scrolling. Just random content that lets me see how the landing page and
-        the header behave when scrolling. Just random content that lets me see
-        how the landing page and the header behave when scrolling. Just random
-        content that lets me see how the landing page and the header behave when
-        scrolling. Just random content that lets me see how the landing page and
-        the header behave when scrolling. Just random content that lets me see
-        how the landing page and the header behave when scrolling. Just random
-        content that lets me see how the landing page and the header behave when
-        scrolling. Just random content that lets me see how the landing page and
-        the header behave when scrolling. Just random content that lets me see
-        how the landing page and the header behave when scrolling. Just random
-        content that lets me see how the landing page and the header behave when
-        scrolling. Just random content that lets me see how the landing page and
-        the header behave when scrolling. Just random content that lets me see
-        how the landing page and the header behave when scrolling. Just random
-        content that lets me see how the landing page and the header behave when
-        scrolling. Just random content that lets me see how the landing page and
-        the header behave when scrolling. Just random content that lets me see
-        how the landing page and the header behave when scrolling. Just random
-        content that lets me see how the landing page and the header behave when
-        scrolling. Just random content that lets me see how the landing page and
-        the header behave when scrolling. Just random content that lets me see
-        how the landing page and the header behave when scrolling. Just random
-        content that lets me see how the landing page and the header behave when
-        scrolling. Just random content that lets me see how the landing page and
-        the header behave when scrolling. Just random content that lets me see
-        how the landing page and the header behave when scrolling. Just random
-        content that lets me see how the landing page and the header behave when
-        scrolling.
-      </p>
+
+    <!-------------------- HISTORY -------------------->
+    <div id="history">
+      <div id="history-title-container">
+        <p id="history-title">History</p>
+      </div>
+      <div id="history-content">
+        <div id="history-col-1">
+          <div>
+            <img
+              id="history-img-1"
+              data-aos="fade-right"
+              data-aos-duration="750"
+              data-aos-easing="ease"
+              data-aos-once="true"
+              src="https://ik.imagekit.io/w1xennnidd/history_8vP8eqrOJBGi.jpg"
+              alt="pic1"
+              loading="lazy"
+            />
+          </div>
+          <div id="history-text-container-1">
+            <p
+              data-aos="fade-right"
+              data-aos-duration="750"
+              data-aos-easing="ease"
+              data-aos-once="true"
+            >
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus
+              quae eum est dolores cumque velit vel quos id, repellendus facere.
+              Vitae dignissimos eligendi enim illo, voluptas ipsa in id
+              architecto.
+            </p>
+          </div>
+        </div>
+        <div id="history-col-2">
+          <div id="history-text-container-2">
+            <p
+              id="history-text-2"
+              data-aos="fade-left"
+              data-aos-duration="750"
+              data-aos-easing="ease"
+              data-aos-once="true"
+            >
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima
+              doloribus suscipit facere aliquam quas vel.
+            </p>
+          </div>
+          <div id="history-img-container-2">
+            <img
+              id="history-img-2"
+              data-aos="fade-left"
+              data-aos-duration="750"
+              data-aos-easing="ease"
+              data-aos-once="true"
+              src="https://ik.imagekit.io/w1xennnidd/history2_7e8Egfnbv4eF.jpg"
+              alt="pic2"
+              loading="lazy"
+            />
+          </div>
+        </div>
+      </div>
     </div>
   </body>
 </html>
