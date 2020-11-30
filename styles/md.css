@@ -24,4 +24,8 @@
         background-position: 50% 100%;
         background-size: 100% 1px;
     }
+    /************************* GALLERY *************************/
+    #gallery-images {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
 }

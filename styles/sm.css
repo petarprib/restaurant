@@ -1,8 +1,13 @@
 @media (min-width: 576px) {
+    /************************* GENERAL *************************/
     .section-container {
         padding: 15px;
     }
     .section-title-container {
         margin-left: 0;
+    }
+    /************************* GALLERY *************************/
+    #gallery-images {
+        grid-template-columns: 1fr 1fr 1fr;
     }
 }
