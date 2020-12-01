@@ -52,7 +52,6 @@ $(document).ready(function () {
 $(window).resize(function () {
   let noOfColumns = $("#gallery-images").css("grid-template-columns").split(" ")
     .length;
-
   let changeInNoOfColumns = false;
 
   if (noOfColumns !== initialNoOfColumns) {
@@ -63,7 +62,6 @@ $(window).resize(function () {
   if (changeInNoOfColumns) {
     $("#gallery-images").empty();
     appendGalleryImages();
-    changeInNoOfColumns = false;
   }
 });
 
