@@ -15,30 +15,30 @@ function toggleSidebar() {
 }
 
 const gallery_images = [
-  { src: "https://ik.imagekit.io/w1xennnidd/restaurant/01_jsIApnb2kPYQ.jpg" },
-  { src: "https://ik.imagekit.io/w1xennnidd/restaurant/02_69tQyqSC-fZrj.jpg" },
-  { src: "https://ik.imagekit.io/w1xennnidd/restaurant/03_fivS6EQhZ3ar.jpg" },
-  { src: "https://ik.imagekit.io/w1xennnidd/restaurant/04_mGmUbSkW6ZmL.jpg" },
-  { src: "https://ik.imagekit.io/w1xennnidd/restaurant/05_Nk5hgnOVMT4RZ.jpg" },
-  { src: "https://ik.imagekit.io/w1xennnidd/restaurant/06_N_VvBWf7Hadp.jpg" },
-  { src: "https://ik.imagekit.io/w1xennnidd/restaurant/07_FwjY72oVj6N8.jpg" },
-  { src: "https://ik.imagekit.io/w1xennnidd/restaurant/08_1iiUWED2wcF3.jpg" },
-  { src: "https://ik.imagekit.io/w1xennnidd/restaurant/09_vdq8AGuqjD-O.jpg" },
-  { src: "https://ik.imagekit.io/w1xennnidd/restaurant/10_rNphfJE00xjJ.jpg" },
-  { src: "https://ik.imagekit.io/w1xennnidd/restaurant/11_qF7NGSE_N2jm.jpg" },
-  { src: "https://ik.imagekit.io/w1xennnidd/restaurant/12_h_VUmlQDjP0Z.jpg" },
-  { src: "https://ik.imagekit.io/w1xennnidd/restaurant/13_P_6pLsAkTP1n.jpg" },
-  { src: "https://ik.imagekit.io/w1xennnidd/restaurant/14_7GaVB7712dFN.jpg" },
-  { src: "https://ik.imagekit.io/w1xennnidd/restaurant/15_GKSbfs1t8M98i.jpg" },
-  { src: "https://ik.imagekit.io/w1xennnidd/restaurant/16_Zbq_ApRctQnU.jpg" },
-  { src: "https://ik.imagekit.io/w1xennnidd/restaurant/17_TDP73-vOoeSo.jpg" },
-  { src: "https://ik.imagekit.io/w1xennnidd/restaurant/18_NY1yLq1BVlA9.jpg" },
-  { src: "https://ik.imagekit.io/w1xennnidd/restaurant/19_E1O19jmNzagLt.jpg" },
-  { src: "https://ik.imagekit.io/w1xennnidd/restaurant/20_qnLOdsTboLlpm.jpg" },
-  { src: "https://ik.imagekit.io/w1xennnidd/restaurant/21_TVRy-0HwfBM2.jpg" },
-  { src: "https://ik.imagekit.io/w1xennnidd/restaurant/22_0mfVwKHALes_.jpg" },
-  { src: "https://ik.imagekit.io/w1xennnidd/restaurant/23_WXOiY0BBcr1x.jpg" },
-  { src: "https://ik.imagekit.io/w1xennnidd/restaurant/24_7G-FnZ1W9_Co.jpg" },
+  "https://ik.imagekit.io/w1xennnidd/restaurant/01_jsIApnb2kPYQ.jpg",
+  "https://ik.imagekit.io/w1xennnidd/restaurant/02_69tQyqSC-fZrj.jpg",
+  "https://ik.imagekit.io/w1xennnidd/restaurant/03_fivS6EQhZ3ar.jpg",
+  "https://ik.imagekit.io/w1xennnidd/restaurant/04_mGmUbSkW6ZmL.jpg",
+  "https://ik.imagekit.io/w1xennnidd/restaurant/05_Nk5hgnOVMT4RZ.jpg",
+  "https://ik.imagekit.io/w1xennnidd/restaurant/06_N_VvBWf7Hadp.jpg",
+  "https://ik.imagekit.io/w1xennnidd/restaurant/07_FwjY72oVj6N8.jpg",
+  "https://ik.imagekit.io/w1xennnidd/restaurant/08_1iiUWED2wcF3.jpg",
+  "https://ik.imagekit.io/w1xennnidd/restaurant/09_vdq8AGuqjD-O.jpg",
+  "https://ik.imagekit.io/w1xennnidd/restaurant/10_rNphfJE00xjJ.jpg",
+  "https://ik.imagekit.io/w1xennnidd/restaurant/11_qF7NGSE_N2jm.jpg",
+  "https://ik.imagekit.io/w1xennnidd/restaurant/12_h_VUmlQDjP0Z.jpg",
+  "https://ik.imagekit.io/w1xennnidd/restaurant/13_P_6pLsAkTP1n.jpg",
+  "https://ik.imagekit.io/w1xennnidd/restaurant/14_7GaVB7712dFN.jpg",
+  "https://ik.imagekit.io/w1xennnidd/restaurant/15_GKSbfs1t8M98i.jpg",
+  "https://ik.imagekit.io/w1xennnidd/restaurant/16_Zbq_ApRctQnU.jpg",
+  "https://ik.imagekit.io/w1xennnidd/restaurant/17_TDP73-vOoeSo.jpg",
+  "https://ik.imagekit.io/w1xennnidd/restaurant/18_NY1yLq1BVlA9.jpg",
+  "https://ik.imagekit.io/w1xennnidd/restaurant/19_E1O19jmNzagLt.jpg",
+  "https://ik.imagekit.io/w1xennnidd/restaurant/20_qnLOdsTboLlpm.jpg",
+  "https://ik.imagekit.io/w1xennnidd/restaurant/21_TVRy-0HwfBM2.jpg",
+  "https://ik.imagekit.io/w1xennnidd/restaurant/22_0mfVwKHALes_.jpg",
+  "https://ik.imagekit.io/w1xennnidd/restaurant/23_WXOiY0BBcr1x.jpg",
+  "https://ik.imagekit.io/w1xennnidd/restaurant/24_7G-FnZ1W9_Co.jpg",
 ];
 
 let initialNoOfColumns = $("#gallery-images")
@@ -60,17 +60,24 @@ $(window).resize(function () {
   }
 
   if (changeInNoOfColumns) {
-    $("#gallery-images").empty();
-    appendGalleryImages();
+    resetGallery();
   }
 });
 
+function resetGallery() {
+  $("#gallery-images").empty();
+  appendGalleryImages();
+  $("#close-gallery").replaceWith(
+    "<p id='load-more' onclick='loadMoreImages()'>Load more</p>"
+  );
+}
+
 function appendGalleryImages() {
   for (let i = 0; i < initialNoOfColumns; i++) {
-    let src = gallery_images[i].src;
+    let src = gallery_images[i];
     let alt = src.substring(src.lastIndexOf("/") + 1, src.lastIndexOf("."));
     $("#gallery-images").append(
-      `<div class="gallery-image"><img src="${src}" alt="${alt}" loading="lazy" /></div>`
+      `<div class="pointer gallery-image"><img onclick="openImage('${src}')" src="${src}" alt="${alt}"/></div>`
     );
   }
 }
@@ -81,19 +88,69 @@ function loadMoreImages() {
   if (galleryLength < gallery_images.length / 2) {
     $("#gallery-images").empty();
     for (let i = 0; i < gallery_images.length / 2; i++) {
-      let src = gallery_images[i].src;
+      let src = gallery_images[i];
       let alt = src.substring(src.lastIndexOf("/") + 1, src.lastIndexOf("."));
       $("#gallery-images").append(
-        `<div class="gallery-image"><img src="${src}" alt="${alt}" loading="lazy" /></div>`
+        `<div class="pointer gallery-image"><img onclick="openImage('${src}')" src="${src}" alt="${alt}"/></div>`
       );
     }
   } else if (galleryLength === gallery_images.length / 2) {
     for (let i = gallery_images.length / 2; i < gallery_images.length; i++) {
-      let src = gallery_images[i].src;
+      let src = gallery_images[i];
       let alt = src.substring(src.lastIndexOf("/") + 1, src.lastIndexOf("."));
       $("#gallery-images").append(
-        `<div class="gallery-image"><img src="${src}" alt="${alt}" loading="lazy" /></div>`
+        `<div class="pointer gallery-image"><img onclick="openImage('${src}')" src="${src}" alt="${alt}"/></div>`
       );
     }
+  }
+
+  if ($(".gallery-image").length === gallery_images.length) {
+    $("#load-more").replaceWith(
+      "<p id='close-gallery' onclick='resetGallery()'>Close gallery</p>"
+    );
+  }
+}
+
+function openImage(src) {
+  $("#slideshow-image").empty();
+  $("#gallery-slideshow").removeClass("hidden");
+  $("#gallery-slideshow").addClass("show-slideshow");
+  $("body").css("overflow", "hidden");
+  let alt = src.substring(src.lastIndexOf("/") + 1, src.lastIndexOf("."));
+  $("#slideshow-image").append(`<img src="${src}" alt="${alt}"/>`);
+}
+
+function closeSlideshow() {
+  $("#gallery-slideshow").addClass("hidden");
+  $("body").css("overflow", "visible");
+}
+
+function previousImage() {
+  let src = $("#slideshow-image img").attr("src");
+  let imageIndex = gallery_images.indexOf(src);
+  let previousImage = gallery_images[imageIndex - 1];
+  let previousAlt = previousImage.substring(
+    previousImage.lastIndexOf("/") + 1,
+    previousImage.lastIndexOf(".")
+  );
+  if (imageIndex > 0) {
+    $("#slideshow-image").empty();
+    $("#slideshow-image").append(
+      `<img src="${previousImage}" alt="${previousAlt}"/>`
+    );
+  }
+}
+
+function nextImage() {
+  let src = $("#slideshow-image img").attr("src");
+  let imageIndex = gallery_images.indexOf(src);
+  let nextImage = gallery_images[imageIndex + 1];
+  let nextAlt = nextImage.substring(
+    nextImage.lastIndexOf("/") + 1,
+    nextImage.lastIndexOf(".")
+  );
+  if (imageIndex < gallery_images.length - 1) {
+    $("#slideshow-image").empty();
+    $("#slideshow-image").append(`<img src="${nextImage}" alt="${nextAlt}"/>`);
   }
 }

@@ -1,10 +1,15 @@
-/************************* GENERAL *************************/
+/************************************************** GENERAL **************************************************/
 
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: "Raleway", sans-serif;
+    cursor: context-menu;
+}
+
+.hidden {
+    display: none;
 }
 
 img {
@@ -35,7 +40,7 @@ img {
     text-transform: uppercase;
 }
 
-/************************* LANDING PAGE *************************/
+/************************************************** LANDING PAGE **************************************************/
 
 #landing {
     background-image: url("https://ik.imagekit.io/w1xennnidd/landing-image_o0ZkP73xMKyD.jpg");
@@ -83,9 +88,9 @@ img {
     ;
 }
 
-/************************* HEADER *************************/
+/************************************************** HEADER **************************************************/
 
-#header {
+header {
     z-index: 1000;
     position: fixed;
     top: 0;
@@ -114,7 +119,7 @@ img {
     display: none;
 }
 
-/************************* SIDEBAR *************************/
+/************************************************** SIDEBAR **************************************************/
 
 #sidebar {
     z-index: 1000;
@@ -179,7 +184,7 @@ img {
     font-size: 2rem;
 }
 
-/************************* HISTORY *************************/
+/************************************************** HISTORY **************************************************/
 
 #history-title-container {
     background-color: rgb(123, 0, 44, 0.8);
@@ -240,7 +245,7 @@ img {
     border-bottom-left-radius: 5px;
 }
 
-/************************* GALLERY *************************/
+/************************************************** GALLERY **************************************************/
 
 #gallery {
     background-color: rgb(123, 0, 44, 0.8);
@@ -273,4 +278,71 @@ img {
     position: absolute;
     top: 0;
     left: 0;
+}
+
+/************************************************** SLIDESHOW **************************************************/
+
+.show-slideshow {
+    z-index: 1010;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    background: rgba(0, 0, 0, 0.7);
+}
+
+#close-slideshow {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+#close-slideshow .fa-times-circle {
+    color: rgb(255, 255, 255);
+    font-size: 35px;
+}
+
+#slideshow-image {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#slideshow-image img {
+    max-height: 80vh;
+    max-width: 90%;
+}
+
+.slideshow-arrow-container {
+    z-index: 1020;
+    position: absolute;
+    width: 25%;
+    height: 60%;
+    top: 20%;
+    display: flex;
+    align-items: center;
+}
+
+.slideshow-arrow-container:hover {
+    background-color: rgb(0, 0, 0, 0.3);
+}
+
+.slideshow-arrow {
+    z-index: 1020;
+    font-size: 25px;
+    color: rgb(255, 255, 255);
+    position: relative;
+}
+
+.fa-angle-left {
+    left: 5px;
+}
+
+.fa-angle-right {
+    right: 5px;
+}
+
+#next-image {
+    right: 0;
+    justify-content: flex-end;
 }

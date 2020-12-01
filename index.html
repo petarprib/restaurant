@@ -95,7 +95,7 @@
     </div>
 
     <!-------------------- HISTORY -------------------->
-    <div class="section-container">
+    <section class="section-container">
       <div id="history-title-container" class="section-title-container">
         <p id="history-title" class="section-title">History</p>
       </div>
@@ -110,7 +110,6 @@
               data-aos-once="true"
               src="https://ik.imagekit.io/w1xennnidd/history_8vP8eqrOJBGi.jpg"
               alt="pic1"
-              loading="lazy"
             />
           </div>
           <div id="history-text-container-1">
@@ -149,23 +148,46 @@
               data-aos-once="true"
               src="https://ik.imagekit.io/w1xennnidd/history2_7e8Egfnbv4eF.jpg"
               alt="pic2"
-              loading="lazy"
             />
           </div>
         </div>
       </div>
-    </div>
+    </section>
 
     <!-------------------- GALLERY -------------------->
-    <div id="gallery">
+    <section id="gallery">
       <div class="section-container">
         <div id="gallery-title-container" class="section-title-container">
           <p id="gallery-title" class="section-title">Gallery</p>
         </div>
         <div id="gallery-images"></div>
         <div>
-          <p onclick="loadMoreImages()">LOAD MORE</p>
+          <p id="load-more" class="pointer" onclick="loadMoreImages()">
+            Load more
+          </p>
         </div>
+      </div>
+    </section>
+
+    <!-------------------- SLIDESHOW -------------------->
+    <div id="gallery-slideshow" class="hidden">
+      <div id="close-slideshow">
+        <i class="pointer far fa-times-circle" onclick="closeSlideshow()"></i>
+      </div>
+      <div
+        id="previous-image"
+        class="pointer slideshow-arrow-container"
+        onclick="previousImage()"
+      >
+        <i class="slideshow-arrow fas fa-angle-left"></i>
+      </div>
+      <div id="slideshow-image"></div>
+      <div
+        id="next-image"
+        class="pointer slideshow-arrow-container"
+        onclick="nextImage()"
+      >
+        <i class="slideshow-arrow fas fa-angle-right"></i>
       </div>
     </div>
   </body>
