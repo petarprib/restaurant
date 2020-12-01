@@ -1,17 +1,16 @@
 AOS.init();
 
 function toggleSidebar() {
-  const sidebar_toggler = document.getElementById("sidebar-toggler");
-  const body = document.getElementById("body");
-
-  if (sidebar_toggler.className === "fas fa-bars pointer") {
-    document.getElementById("sidebar").style.right = "0";
-    sidebar_toggler.className = "fas fa-times pointer";
-    body.style.overflow = "hidden";
+  if ($("#sidebar-toggler").attr("class") === "pointer fas fa-bars") {
+    $("#sidebar").css("right", "0");
+    $("#sidebar-toggler").removeClass("fa-bars");
+    $("#sidebar-toggler").addClass("fa-times");
+    $("body").css("overflow", "hidden");
   } else {
-    document.getElementById("sidebar").style.right = "-100%";
-    sidebar_toggler.className = "fas fa-bars pointer";
-    body.style.overflow = "visible";
+    $("#sidebar").css("right", "-100%");
+    $("#sidebar-toggler").removeClass("fa-times");
+    $("#sidebar-toggler").addClass("fa-bars");
+    $("body").css("overflow", "visible");
   }
 }
 
