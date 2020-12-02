@@ -68,7 +68,7 @@ function resetGallery() {
   $("#gallery-images").empty();
   appendGalleryImages();
   $("#close-gallery").replaceWith(
-    "<p id='load-more' onclick='loadMoreImages()'>Load more</p>"
+    "<p id='load-more' class='pointer gallery-button' onclick='loadMoreImages()'>Load more</p>"
   );
 }
 
@@ -77,7 +77,7 @@ function appendGalleryImages() {
     let src = gallery_images[i];
     let alt = src.substring(src.lastIndexOf("/") + 1, src.lastIndexOf("."));
     $("#gallery-images").append(
-      `<div class="pointer gallery-image"><img onclick="openImage('${src}')" src="${src}" alt="${alt}"/></div>`
+      `<div class="gallery-image"><img class="pointer" onclick="openImage('${src}')" src="${src}" alt="${alt}"/></div>`
     );
   }
 }
@@ -91,7 +91,7 @@ function loadMoreImages() {
       let src = gallery_images[i];
       let alt = src.substring(src.lastIndexOf("/") + 1, src.lastIndexOf("."));
       $("#gallery-images").append(
-        `<div class="pointer gallery-image"><img onclick="openImage('${src}')" src="${src}" alt="${alt}"/></div>`
+        `<div class="gallery-image"><img class="pointer" onclick="openImage('${src}')" src="${src}" alt="${alt}"/></div>`
       );
     }
   } else if (galleryLength === gallery_images.length / 2) {
@@ -99,19 +99,22 @@ function loadMoreImages() {
       let src = gallery_images[i];
       let alt = src.substring(src.lastIndexOf("/") + 1, src.lastIndexOf("."));
       $("#gallery-images").append(
-        `<div class="pointer gallery-image"><img onclick="openImage('${src}')" src="${src}" alt="${alt}"/></div>`
+        `<div class="gallery-image"><img class="pointer" onclick="openImage('${src}')" src="${src}" alt="${alt}"/></div>`
       );
     }
   }
 
   if ($(".gallery-image").length === gallery_images.length) {
     $("#load-more").replaceWith(
-      "<p id='close-gallery' onclick='resetGallery()'>Close gallery</p>"
+      "<p id='close-gallery' class='pointer gallery-button' onclick='resetGallery()'>Close gallery</p>"
     );
   }
 }
 
+let slideshowOpen = false;
+
 function openImage(src) {
+  slideshowOpen = true;
   $("#slideshow-image").empty();
   $("#gallery-slideshow").removeClass("hidden");
   $("#gallery-slideshow").addClass("show-slideshow");
@@ -121,6 +124,7 @@ function openImage(src) {
 }
 
 function closeSlideshow() {
+  slideshowOpen = false;
   $("#gallery-slideshow").addClass("hidden");
   $("body").css("overflow", "visible");
 }
@@ -154,3 +158,15 @@ function nextImage() {
     $("#slideshow-image").append(`<img src="${nextImage}" alt="${nextAlt}"/>`);
   }
 }
+
+$("body").keydown(function (e) {
+  if (slideshowOpen) {
+    if (e.key === "Escape") {
+      closeSlideshow();
+    } else if (e.key === "ArrowLeft") {
+      previousImage();
+    } else if (e.key === "ArrowRight") {
+      nextImage();
+    }
+  }
+});

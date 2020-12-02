@@ -37,7 +37,8 @@
   </head>
 
   <body id="body">
-    <!-------------------- HEADER -------------------->
+    <!-------------------------------------------------- HEADER -------------------------------------------------->
+
     <header id="header">
       <div>
         <a href="#" class="header-option header-option-left">History</a>
@@ -67,7 +68,8 @@
       ></i>
     </header>
 
-    <!-------------------- SIDEBAR -------------------->
+    <!-------------------------------------------------- SIDEBAR -------------------------------------------------->
+
     <div id="sidebar">
       <div id="sidebar-options">
         <a href="#" class="sidebar-option">History</a>
@@ -82,7 +84,8 @@
       </div>
     </div>
 
-    <!-------------------- LANDING PAGE -------------------->
+    <!-------------------------------------------------- LANDING PAGE -------------------------------------------------->
+
     <div id="landing">
       <div id="landing-content">
         <p id="landing-title">
@@ -94,7 +97,8 @@
       </div>
     </div>
 
-    <!-------------------- HISTORY -------------------->
+    <!-------------------------------------------------- HISTORY -------------------------------------------------->
+
     <section class="section-container">
       <div id="history-title-container" class="section-title-container">
         <p id="history-title" class="section-title">History</p>
@@ -154,22 +158,28 @@
       </div>
     </section>
 
-    <!-------------------- GALLERY -------------------->
+    <!-------------------------------------------------- GALLERY -------------------------------------------------->
+
     <section id="gallery">
       <div class="section-container">
         <div id="gallery-title-container" class="section-title-container">
           <p id="gallery-title" class="section-title">Gallery</p>
         </div>
         <div id="gallery-images"></div>
-        <div>
-          <p id="load-more" class="pointer" onclick="loadMoreImages()">
+        <div id="gallery-button-container">
+          <p
+            id="load-more"
+            class="pointer gallery-button"
+            onclick="loadMoreImages()"
+          >
             Load more
           </p>
         </div>
       </div>
     </section>
 
-    <!-------------------- SLIDESHOW -------------------->
+    <!-------------------------------------------------- SLIDESHOW -------------------------------------------------->
+
     <div id="gallery-slideshow" class="hidden">
       <div id="close-slideshow">
         <i class="pointer far fa-times-circle" onclick="closeSlideshow()"></i>
@@ -179,7 +189,7 @@
         class="pointer slideshow-arrow-container"
         onclick="previousImage()"
       >
-        <i class="slideshow-arrow fas fa-angle-left"></i>
+        <i class="pointer slideshow-arrow fas fa-angle-left"></i>
       </div>
       <div id="slideshow-image"></div>
       <div
@@ -187,7 +197,7 @@
         class="pointer slideshow-arrow-container"
         onclick="nextImage()"
       >
-        <i class="slideshow-arrow fas fa-angle-right"></i>
+        <i class="pointer slideshow-arrow fas fa-angle-right"></i>
       </div>
     </div>
   </body>
