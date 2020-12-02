@@ -76,11 +76,9 @@ function appendGalleryImages() {
   for (let i = 0; i < initialNoOfColumns; i++) {
     let src = gallery_images[i];
     let alt = src.substring(src.lastIndexOf("/") + 1, src.lastIndexOf("."));
+
     $("#gallery-images").append(
-      `<div class="gallery-image"><img class="pointer" data-aos="fade"
-      data-aos-duration="750"
-      data-aos-easing="ease"
-      data-aos-once="true" onclick="openImage('${src}')" src="${src}" alt="${alt}"/></div>`
+      `<div class="gallery-image"><img class="pointer" data-aos="fade" data-aos-duration="750" data-aos-easing="ease" data-aos-once="true" onclick="openImage('${src}')" src="${src}" alt="${alt}"/></div>`
     );
   }
 }
@@ -93,6 +91,7 @@ function loadMoreImages() {
     for (let i = 0; i < gallery_images.length / 2; i++) {
       let src = gallery_images[i];
       let alt = src.substring(src.lastIndexOf("/") + 1, src.lastIndexOf("."));
+
       $("#gallery-images").append(
         `<div class="gallery-image"><img class="pointer" onclick="openImage('${src}')" src="${src}" alt="${alt}"/></div>`
       );
@@ -101,6 +100,7 @@ function loadMoreImages() {
     for (let i = gallery_images.length / 2; i < gallery_images.length; i++) {
       let src = gallery_images[i];
       let alt = src.substring(src.lastIndexOf("/") + 1, src.lastIndexOf("."));
+
       $("#gallery-images").append(
         `<div class="gallery-image"><img class="pointer" onclick="openImage('${src}')" src="${src}" alt="${alt}"/></div>`
       );
@@ -156,6 +156,7 @@ function nextImage() {
     nextImage.lastIndexOf("/") + 1,
     nextImage.lastIndexOf(".")
   );
+
   if (imageIndex < gallery_images.length - 1) {
     $("#slideshow-image").empty();
     $("#slideshow-image").append(`<img src="${nextImage}" alt="${nextAlt}"/>`);
