@@ -77,7 +77,10 @@ function appendGalleryImages() {
     let src = gallery_images[i];
     let alt = src.substring(src.lastIndexOf("/") + 1, src.lastIndexOf("."));
     $("#gallery-images").append(
-      `<div class="gallery-image"><img class="pointer" onclick="openImage('${src}')" src="${src}" alt="${alt}"/></div>`
+      `<div class="gallery-image"><img class="pointer" data-aos="fade"
+      data-aos-duration="750"
+      data-aos-easing="ease"
+      data-aos-once="true" onclick="openImage('${src}')" src="${src}" alt="${alt}"/></div>`
     );
   }
 }
