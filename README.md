@@ -1,5 +1,5 @@
 # /!\ Under construction /!\
 
-A dummy restaurant mobile-first website done with HTML, CSS and JS/jQuery, almost entirely focused on displaying the ability to create proper layouts and styling.
+A dummy restaurant responsive website done with HTML, CSS and JS/jQuery, almost entirely focused on displaying the ability to create proper layouts and styling.
 
 ### [CodeSandbox demo](https://codesandbox.io/s/restaurant-8hyus)
