@@ -1,11 +1,16 @@
 /************************************************** GENERAL **************************************************/
 
+html {
+    scroll-behavior: smooth;
+}
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: "Raleway", sans-serif;
-    cursor: context-menu;
+    cursor: default;
+    outline: none;
 }
 
 .hidden {
@@ -35,7 +40,7 @@ img {
     font-size: 2.5rem;
     position: relative;
     top: 8px;
-    left: 8px;
+    left: 15px;
     line-height: 2rem;
     text-transform: uppercase;
 }
@@ -172,7 +177,7 @@ header {
 
 #history-title-container {
     background-color: rgb(123, 0, 44, 0.8);
-    width: 162px;
+    width: 170px;
 }
 
 #history-title {
@@ -181,7 +186,7 @@ header {
 
 #history-content {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: repeat(2, 1fr);
     gap: 15px;
 }
 
@@ -237,7 +242,7 @@ header {
 
 #gallery-title-container {
     background-color: rgb(255, 215, 0);
-    width: 171px;
+    width: 179px;
 }
 
 #gallery-title {
@@ -246,7 +251,7 @@ header {
 
 #gallery-images {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: repeat(2, 1fr);
     gap: 15px;
     margin-bottom: 15px;
 }
@@ -343,4 +348,74 @@ header {
 #next-image {
     right: 0;
     justify-content: flex-end;
+}
+
+/************************************************** RESERVE **************************************************/
+
+#reserve-title-container {
+    background-color: rgb(123, 0, 44, 0.8);
+    width: 180px;
+}
+
+#reserve-title {
+    color: rgb(0, 0, 0);
+}
+
+.reserve-info {
+    margin: 0 15px 15px 15px;
+    padding: 5px;
+    background-color: rgb(128, 128, 128);
+    color: rgb(255, 255, 255);
+    display: inline-block;
+}
+
+#contact-link {
+    color: rgb(255, 215, 0);
+    text-decoration: none;
+}
+
+#reserve-form {
+    margin: 0 15px;
+}
+
+.reserve-form-group {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+.reserve-form-input {
+    margin-bottom: 15px;
+    border: none;
+    border-bottom: solid 2px rgb(128, 128, 128);
+    transition: 400ms ease;
+    padding: 5px;
+    font-size: 1em;
+    cursor: auto;
+}
+
+.reserve-form-input:focus {
+    border-bottom: solid 2px rgb(255, 215, 0);
+}
+
+input::-webkit-outer-spin-button, input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+input[type=number] {
+    -moz-appearance: textfield;
+}
+
+#reserve-button {
+    background-color: rgb(123, 0, 44, 0.8);
+    color: rgb(255, 255, 255);
+    text-transform: uppercase;
+    width: 150px;
+    height: 30px;
+    border-radius: 3px;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 350ms;
 }

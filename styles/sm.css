@@ -23,7 +23,7 @@
     }
     /************************************************** GALLERY **************************************************/
     #gallery-images {
-        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-columns: repeat(3, 1fr);
     }
     .gallery-image img {
         transition: 250ms;
@@ -44,5 +44,20 @@
     }
     .slideshow-arrow-container:hover {
         background-color: rgb(0, 0, 0, 0.3);
+    }
+    /************************************************** RESERVE **************************************************/
+    .reserve-info {
+        margin: 0 0 15px 0;
+    }
+    .reserve-form-group {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 15px;
+    }
+    #reserve-form {
+        margin: 0;
+    }
+    #reserve-button:hover {
+        background-color: rgb(123, 0, 44, 0.6);
+        transition: 250ms;
     }
 }

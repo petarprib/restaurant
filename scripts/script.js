@@ -1,5 +1,41 @@
 AOS.init();
 
+$(".header-option").click(function () {
+  resetGallery();
+  let divId = $(this).attr("href");
+  $("html, body").animate(
+    {
+      scrollTop: $(divId).offset().top - 75,
+    },
+    100
+  );
+});
+
+$("#landing-button").click(function () {
+  resetGallery();
+  $("html, body").animate(
+    {
+      scrollTop: $("#reserve").offset().top - 75,
+    },
+    100
+  );
+});
+
+$(".sidebar-option").click(function () {
+  resetGallery();
+  let divId = $(this).attr("href");
+  $("#sidebar").css("right", "-100%");
+  $("#sidebar-toggler").removeClass("fa-times");
+  $("#sidebar-toggler").addClass("fa-bars");
+  $("body").css("overflow", "visible");
+  $("html, body").animate(
+    {
+      scrollTop: $(divId).offset().top - 75,
+    },
+    100
+  );
+});
+
 function toggleSidebar() {
   if ($("#sidebar-toggler").attr("class") === "pointer fas fa-bars") {
     $("#sidebar").css("right", "0");
@@ -47,6 +83,13 @@ let initialNoOfColumns = $("#gallery-images")
 
 $(document).ready(function () {
   appendGalleryImages();
+  $("#datepicker").datepicker();
+  $("#timepicker").timepicker({
+    timeFormat: "HH:mm",
+    minTime: "08:00",
+    maxHour: 23,
+    maxMinutes: 00,
+  });
 });
 
 $(window).resize(function () {
@@ -78,7 +121,7 @@ function appendGalleryImages() {
     let alt = src.substring(src.lastIndexOf("/") + 1, src.lastIndexOf("."));
 
     $("#gallery-images").append(
-      `<div class="gallery-image"><img class="pointer" data-aos="fade" data-aos-duration="750" data-aos-easing="ease" data-aos-once="true" onclick="openImage('${src}')" src="${src}" alt="${alt}"/></div>`
+      `<div class="gallery-image"><img class="pointer" onclick="openImage('${src}')" src="${src}" alt="${alt}"/></div>`
     );
   }
 }
