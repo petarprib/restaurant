@@ -55,7 +55,7 @@
   <body id="body">
     <!-------------------------------------------------- HEADER -------------------------------------------------->
 
-    <header id="header">
+    <header>
       <div>
         <a href="#history" class="header-option header-option-left">History</a>
       </div>
@@ -231,34 +231,38 @@
       </div>
       <form id="reserve-form" action="/">
         <div class="reserve-form-group">
-          <input class="reserve-form-input" type="text" placeholder="Name*" />
           <input
-            class="reserve-form-input"
+            class="reserve-form-input name"
+            type="text"
+            placeholder="Name*"
+          />
+          <input
+            class="reserve-form-input surname"
             type="text"
             placeholder="Surname*"
           />
         </div>
         <div class="reserve-form-group">
           <input
-            class="reserve-form-input"
+            class="reserve-form-input phone"
             type="text"
             placeholder="Phone Number*"
           />
           <input
-            class="reserve-form-input"
+            class="reserve-form-input email"
             type="text"
             placeholder="Email Address*"
           />
         </div>
         <div class="reserve-form-group">
           <input
-            class="reserve-form-input"
+            class="reserve-form-input date"
             type="text"
             placeholder="Date*"
             id="datepicker"
           />
           <input
-            class="reserve-form-input"
+            class="reserve-form-input time"
             type="text"
             placeholder="Time*"
             id="timepicker"
@@ -266,7 +270,7 @@
         </div>
         <div class="reserve-form-group">
           <input
-            class="reserve-form-input"
+            class="reserve-form-input guests"
             type="number"
             placeholder="# of guests*"
             max="12"

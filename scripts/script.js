@@ -83,10 +83,10 @@ let initialNoOfColumns = $("#gallery-images")
 
 $(document).ready(function () {
   appendGalleryImages();
-  $("#datepicker").datepicker();
+  $("#datepicker").datepicker({ dateFormat: "dd.mm.yy" });
   $("#timepicker").timepicker({
-    timeFormat: "HH:mm",
-    minTime: "08:00",
+    timeFormat: "HH.mm",
+    minTime: "08.00",
     maxHour: 23,
     maxMinutes: 00,
   });
@@ -216,4 +216,22 @@ $("body").keydown(function (e) {
       nextImage();
     }
   }
+});
+
+$("#reserve-button").click(function (e) {
+  let fields = [
+    "input.name",
+    "input.surname",
+    "input.phone",
+    "input.email",
+    "input.date",
+    "input.time",
+    "input.guests",
+  ];
+  fields.forEach((field) => {
+    let value = $(`${field}`).val();
+    if (value === "") {
+      $(`${field}`).css("border-bottom", "solid 2px rgb(255, 0, 0)");
+    }
+  });
 });

@@ -26,7 +26,7 @@ img {
 }
 
 .section-container {
-    padding: 15px 0;
+    padding: 30px 0;
     margin: 0 auto;
     width: 100%;
     max-width: 753px;
@@ -386,7 +386,7 @@ header {
 .reserve-form-input {
     margin-bottom: 15px;
     border: none;
-    border-bottom: solid 2px rgb(128, 128, 128);
+    border-bottom: solid 1px rgb(128, 128, 128);
     transition: 400ms ease;
     padding: 5px;
     font-size: 1em;
@@ -394,7 +394,7 @@ header {
 }
 
 .reserve-form-input:focus {
-    border-bottom: solid 2px rgb(255, 215, 0);
+    border-bottom: solid 1px rgb(255, 215, 0);
 }
 
 input::-webkit-outer-spin-button, input::-webkit-inner-spin-button {
@@ -418,4 +418,8 @@ input[type=number] {
     justify-content: center;
     align-items: center;
     transition: 350ms;
+}
+
+#datepicker {
+    display: block;
 }
