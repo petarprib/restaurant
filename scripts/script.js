@@ -77,9 +77,7 @@ const gallery_images = [
   "https://ik.imagekit.io/w1xennnidd/restaurant/24_7G-FnZ1W9_Co.jpg",
 ];
 
-let initialNoOfColumns = $("#gallery-images")
-  .css("grid-template-columns")
-  .split(" ").length;
+let initialNoOfColumns = $("#gallery-images").css("grid-template-columns").split(" ").length;
 
 $(document).ready(function () {
   appendGalleryImages();
@@ -93,8 +91,7 @@ $(document).ready(function () {
 });
 
 $(window).resize(function () {
-  let noOfColumns = $("#gallery-images").css("grid-template-columns").split(" ")
-    .length;
+  let noOfColumns = $("#gallery-images").css("grid-template-columns").split(" ").length;
   let changeInNoOfColumns = false;
 
   if (noOfColumns !== initialNoOfColumns) {
@@ -110,9 +107,7 @@ $(window).resize(function () {
 function resetGallery() {
   $("#gallery-images").empty();
   appendGalleryImages();
-  $("#close-gallery").replaceWith(
-    "<p id='load-more' class='pointer gallery-button' onclick='loadMoreImages()'>Load more</p>"
-  );
+  $("#close-gallery").replaceWith("<p id='load-more' class='pointer gallery-button' onclick='loadMoreImages()'>Load more</p>");
 }
 
 function appendGalleryImages() {
@@ -120,9 +115,7 @@ function appendGalleryImages() {
     let src = gallery_images[i];
     let alt = src.substring(src.lastIndexOf("/") + 1, src.lastIndexOf("."));
 
-    $("#gallery-images").append(
-      `<div class="gallery-image"><img class="pointer" onclick="openImage('${src}')" src="${src}" alt="${alt}"/></div>`
-    );
+    $("#gallery-images").append(`<div class="gallery-image"><img class="pointer" onclick="openImage('${src}')" src="${src}" alt="${alt}"/></div>`);
   }
 }
 
@@ -135,25 +128,19 @@ function loadMoreImages() {
       let src = gallery_images[i];
       let alt = src.substring(src.lastIndexOf("/") + 1, src.lastIndexOf("."));
 
-      $("#gallery-images").append(
-        `<div class="gallery-image"><img class="pointer" onclick="openImage('${src}')" src="${src}" alt="${alt}"/></div>`
-      );
+      $("#gallery-images").append(`<div class="gallery-image"><img class="pointer" onclick="openImage('${src}')" src="${src}" alt="${alt}"/></div>`);
     }
   } else if (galleryLength === gallery_images.length / 2) {
     for (let i = gallery_images.length / 2; i < gallery_images.length; i++) {
       let src = gallery_images[i];
       let alt = src.substring(src.lastIndexOf("/") + 1, src.lastIndexOf("."));
 
-      $("#gallery-images").append(
-        `<div class="gallery-image"><img class="pointer" onclick="openImage('${src}')" src="${src}" alt="${alt}"/></div>`
-      );
+      $("#gallery-images").append(`<div class="gallery-image"><img class="pointer" onclick="openImage('${src}')" src="${src}" alt="${alt}"/></div>`);
     }
   }
 
   if ($(".gallery-image").length === gallery_images.length) {
-    $("#load-more").replaceWith(
-      "<p id='close-gallery' class='pointer gallery-button' onclick='resetGallery()'>Close gallery</p>"
-    );
+    $("#load-more").replaceWith("<p id='close-gallery' class='pointer gallery-button' onclick='resetGallery()'>Close gallery</p>");
   }
 }
 
@@ -179,15 +166,10 @@ function previousImage() {
   let src = $("#slideshow-image img").attr("src");
   let imageIndex = gallery_images.indexOf(src);
   let previousImage = gallery_images[imageIndex - 1];
-  let previousAlt = previousImage.substring(
-    previousImage.lastIndexOf("/") + 1,
-    previousImage.lastIndexOf(".")
-  );
+  let previousAlt = previousImage.substring(previousImage.lastIndexOf("/") + 1, previousImage.lastIndexOf("."));
   if (imageIndex > 0) {
     $("#slideshow-image").empty();
-    $("#slideshow-image").append(
-      `<img src="${previousImage}" alt="${previousAlt}"/>`
-    );
+    $("#slideshow-image").append(`<img src="${previousImage}" alt="${previousAlt}"/>`);
   }
 }
 
@@ -195,10 +177,7 @@ function nextImage() {
   let src = $("#slideshow-image img").attr("src");
   let imageIndex = gallery_images.indexOf(src);
   let nextImage = gallery_images[imageIndex + 1];
-  let nextAlt = nextImage.substring(
-    nextImage.lastIndexOf("/") + 1,
-    nextImage.lastIndexOf(".")
-  );
+  let nextAlt = nextImage.substring(nextImage.lastIndexOf("/") + 1, nextImage.lastIndexOf("."));
 
   if (imageIndex < gallery_images.length - 1) {
     $("#slideshow-image").empty();
@@ -219,19 +198,13 @@ $("body").keydown(function (e) {
 });
 
 $("#reserve-button").click(function (e) {
-  let fields = [
-    "input.name",
-    "input.surname",
-    "input.phone",
-    "input.email",
-    "input.date",
-    "input.time",
-    "input.guests",
-  ];
+  let fields = ["input.name", "input.surname", "input.phone", "input.email", "input.date", "input.time", "input.guests"];
   fields.forEach((field) => {
     let value = $(`${field}`).val();
     if (value === "") {
-      $(`${field}`).css("border-bottom", "solid 2px rgb(255, 0, 0)");
+      $(`${field}`).css("border-bottom", "solid 1px rgb(255, 0, 0)");
+    } else {
+      $(`${field}`).css("border-bottom", "solid 1px rgb(128, 128, 128)");
     }
   });
 });
