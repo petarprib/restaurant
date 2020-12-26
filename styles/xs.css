@@ -394,7 +394,7 @@ header {
 }
 
 .reserve-form-input:focus {
-    border-bottom: solid 1px rgb(255, 215, 0);
+    background-color: rgb(220, 220, 220);
 }
 
 input::-webkit-outer-spin-button, input::-webkit-inner-spin-button {
