@@ -60,4 +60,8 @@
         background-color: rgb(123, 0, 44, 0.6);
         transition: 250ms;
     }
+    /************************************************** CONTACT **************************************************/
+    #contact-title-container div {
+        margin-left: 15px;
+    }
 }

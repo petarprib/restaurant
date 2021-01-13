@@ -8,7 +8,7 @@ html {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: "Raleway", sans-serif;
+    font-family: 'Quicksand', sans-serif;
     cursor: default;
     outline: none;
 }
@@ -17,7 +17,7 @@ html {
     display: none;
 }
 
-img {
+img, iframe {
     display: block;
 }
 
@@ -177,7 +177,7 @@ header {
 
 #history-title-container {
     background-color: rgb(123, 0, 44, 0.8);
-    width: 170px;
+    width: 168px;
 }
 
 #history-title {
@@ -242,7 +242,7 @@ header {
 
 #gallery-title-container {
     background-color: rgb(255, 215, 0);
-    width: 179px;
+    width: 171px;
 }
 
 #gallery-title {
@@ -354,7 +354,7 @@ header {
 
 #reserve-title-container {
     background-color: rgb(123, 0, 44, 0.8);
-    width: 180px;
+    width: 175px;
 }
 
 #reserve-title {
@@ -422,4 +422,44 @@ input[type=number] {
 
 #datepicker {
     display: block;
+}
+
+/************************************************** FOOTER **************************************************/
+
+footer {
+    background-color: rgb(0, 0, 0);
+    padding: 30px 0;
+}
+
+#contact-section-container {
+    margin: 0 auto;
+    width: 100%;
+    max-width: 753px;
+}
+
+#contact-title-container {
+    background-color: rgb(255, 215, 0);
+    width: 187px;
+}
+
+#contact-title {
+    color: rgb(255, 255, 255);
+}
+
+ul li {
+    list-style: none;
+    color: rgb(255, 255, 255);
+}
+
+#contact-details {
+    margin: 15px 15px 0 15px;
+}
+
+#contact-details> :first-child {
+    margin-bottom: 15px;
+}
+
+#footer-social-media {
+    display: flex;
+    justify-content: space-evenly;
 }

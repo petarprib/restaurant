@@ -28,4 +28,16 @@
     #gallery-images {
         grid-template-columns: repeat(4, 1fr);
     }
+    /************************************************** CONTACT **************************************************/
+    #contact-info {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 15px;
+    }
+    #contact-details {
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
 }

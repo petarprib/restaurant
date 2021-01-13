@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="../styles/lg.css" />
     <link rel="stylesheet" href="../styles/xl.css" />
     <link rel="preconnect" href="https://fonts.gstatic.com" />
-    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600&display=swap" rel="stylesheet" />
     <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css" />
@@ -164,8 +164,8 @@
           <input class="reserve-form-input surname" type="text" placeholder="Surname*" />
         </div>
         <div class="reserve-form-group">
-          <input class="reserve-form-input phone" type="text" placeholder="Phone Number*" />
-          <input class="reserve-form-input email" type="text" placeholder="Email Address*" />
+          <input class="reserve-form-input phone" type="text" placeholder="Phone number*" />
+          <input class="reserve-form-input email" type="text" placeholder="Email address*" />
         </div>
         <div class="reserve-form-group">
           <input class="reserve-form-input date" type="text" placeholder="Date*" id="datepicker" />
@@ -173,7 +173,7 @@
         </div>
         <div class="reserve-form-group">
           <input class="reserve-form-input guests" type="number" placeholder="# of guests*" max="12" />
-          <input class="reserve-form-input" type="text" placeholder="Notes/Special Requests" />
+          <input class="reserve-form-input" type="text" placeholder="Notes/Special requests" />
         </div>
       </form>
       <div>
@@ -185,5 +185,43 @@
         <p id="reserve-button" class="pointer" type="submit" form="reserve-form" value="Submit">Submit</p>
       </div>
     </section>
+
+    <!-------------------------------------------------- FOOTER -------------------------------------------------->
+
+    <footer id="contact">
+      <div id="contact-section-container">
+        <div id="contact-title-container" class="section-title-container">
+          <p id="contact-title" class="section-title">Contact</p>
+        </div>
+        <div id="contact-info">
+          <div>
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2993.396644886201!2d2.167682765157307!3d41.38719170397069!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12a4a2f1602b4819%3A0x1eecc2af1c60d64b!2sPla%C3%A7a%20de%20Catalunya!5e0!3m2!1sen!2ses!4v1608985327252!5m2!1sen!2ses"
+              width="100%"
+              height="250px"
+              frameborder="0"
+              style="border: 0"
+              allowfullscreen=""
+              aria-hidden="false"
+              tabindex="0"
+            ></iframe>
+          </div>
+          <div id="contact-details">
+            <div>
+              <ul>
+                <li>+34 987 65 43 21</li>
+                <li>lorem@ipsum.com</li>
+                <li>Open 08:00 to 00:00 all days of the year</li>
+              </ul>
+            </div>
+            <div id="footer-social-media">
+              <i class="fab fa-instagram pointer social-media"></i>
+              <i class="fab fa-facebook-f pointer social-media"></i>
+              <i class="fab fa-twitter pointer social-media"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>
