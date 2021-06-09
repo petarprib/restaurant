@@ -86,9 +86,9 @@ img, iframe {
     transition: all 200ms ease;
 }
 
-/************************************************** HEADER **************************************************/
+/************************************************** NAVBAR **************************************************/
 
-header {
+nav {
     z-index: 1000;
     position: fixed;
     top: 0;
@@ -100,7 +100,7 @@ header {
     align-items: center;
 }
 
-#header-logo {
+#navbar-logo {
     height: 50px;
 }
 
@@ -113,7 +113,7 @@ header {
     font-size: 30px;
 }
 
-.header-option {
+.navbar-option {
     display: none;
 }
 
